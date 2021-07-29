@@ -8,7 +8,18 @@ const color = document.querySelector('#color')
 
 btn_toggle.onclick = () => {
   calculation.innerHTML = 630610718-length.value
-  if(author.display === "none")
+  if(author.style.display === "none")
+    {
+      author.style.display = "block"
+      calculation.style.display = "none"
+      btn_toggle.innerHTML = "Display Calculation"
+    }
+    else
+    {
+      author.style.display = "none"
+      calculation.style.display = "block"
+      btn_toggle.innerHTML = "Display Author"
+    }
 }
 
 // more codes for Search and Reset buttons here
